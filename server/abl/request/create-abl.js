@@ -33,6 +33,7 @@ const baseSchema = {
         }
     },
     required: ["applicantType", "name", "surname", "email"],
+    additionalProperties: false
 };
 
 const individualSchema = {

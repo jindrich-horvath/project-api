@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const rf = fs.promises.readFile;
 const wf = fs.promises.writeFile;
 
-const DEFAULT_STORAGE_PATH = path.join(__dirname, "storage", "requests.json");
+const DEFAULT_STORAGE_PATH = path.join(__dirname, "..", "storage", "requests.json");
 
 class RequestDao {
   constructor(storagePath) {

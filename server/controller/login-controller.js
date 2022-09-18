@@ -3,7 +3,7 @@ const LoginAbl = require("../abl/request/login-abl");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-    LoginAbl(req, res)
+    await LoginAbl(req, res)
 });
 
 module.exports = router;
