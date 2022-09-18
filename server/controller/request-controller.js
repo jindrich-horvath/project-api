@@ -7,6 +7,7 @@ const GetAbl = require("../abl/request/get-abl");
 // const DeleteAbl = require("../abl/request/delete-abl");
 const ListAbl = require("../abl/request/list-abl");
 const CalculateAbl = require("../abl/request/calculate-abl");
+const CreateAbl = require("../abl/request/create-abl");
 
 router.post("/calculate", async (req, res) => {
   await CalculateAbl(req, res)
@@ -15,6 +16,12 @@ router.post("/calculate", async (req, res) => {
 router.get("/", async (req, res) => {
   await GetAbl(req, res);
 });
+
+router.post("/create", async (req, res) => {
+  CreateAbl(req, res)
+});
+
+//TODO
 
 // router.post("/update", async (req, res) => {
 //   await UpdateAbl(req, res);

@@ -1,9 +1,7 @@
 "use strict";
 const fs = require("fs");
 const path = require("path");
-
 const crypto = require("crypto");
-
 const rf = fs.promises.readFile;
 const wf = fs.promises.writeFile;
 
@@ -29,8 +27,7 @@ class RequestDao {
 
   async getRequest(id) {
     let request = await this._loadAllRequests();
-    const result = request.find((b) => b.id === id);
-    return result;
+    return request.find((b) => b.id === id);
   }
 
   async updateRequest(request) {
@@ -69,8 +66,7 @@ class RequestDao {
   }
 
   async listRequests() {
-    let requestList = await this._loadAllRequests();
-    return requestList;
+    return await this._loadAllRequests();
   }
 
   async _loadAllRequests() {

@@ -11,7 +11,7 @@ const schema = {
 
 async function CalculateAbl(req, res) {
   try {
-    const ajv = new Ajv();
+    const ajv = new Ajv({useDefaults: 'empty'});
     const values = req.body;
     const valid = ajv.validate(schema, values);
     if (valid) {

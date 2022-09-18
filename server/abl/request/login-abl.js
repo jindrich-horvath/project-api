@@ -1,5 +1,4 @@
 const UserDao = require("../../dao/user-dao");
-const RequestDao = require("../../dao/request-dao");
 const path = require("path");
 const Ajv = require("ajv").default;
 const dao = new UserDao(
@@ -16,7 +15,7 @@ const schema = {
 
 async function LoginAbl(req, res) {
   try {
-    const ajv = new Ajv();
+    const ajv = new Ajv({useDefaults: 'empty'});
     const headers = req.headers;
     const valid = ajv.validate(schema, headers);
 
