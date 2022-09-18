@@ -1,5 +1,5 @@
 ### start the server for local development
-in the terminal at the root of the project:
+in the terminal at **server** folder of the project:
 * run (only once) ```npm install```
 * run ```npm start```
 * now the server should be running on http://localhost:8000 <br />
