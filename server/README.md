@@ -6,7 +6,8 @@ in the terminal at **server** folder of the project:
   to test it, you can type http://localhost:8000/request/list <br />
    into the address-bar in your browser and you should see list of requests as the result
 
-### list of api endpoints
+### list of api endpoints 
+(more on https://docs.google.com/document/d/11jeV7bfGRC9rJDsRParf_tWZAOWmVXBzGl20bchVWNg/edit?usp=sharing)
 * GET /request/list
 * GET /request/:id
 * GET /login
