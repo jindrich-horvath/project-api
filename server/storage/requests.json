@@ -11,6 +11,7 @@
     "companyName": null,
     "amount": 150000,
     "numOfMonths": 12,
+    "position": null,
     "address": {
       "street": "Accumsan",
       "descNumber": 12,
@@ -34,6 +35,31 @@
     "companyName": null,
     "amount": 70000,
     "numOfMonths": 18,
+    "position": null,
+    "address": {
+      "street": "Ante",
+      "descNumber": 13,
+      "indicativeNumber": 7,
+      "city": "Totam",
+      "postalCode": 777777
+    },
+    "status": "PENDING",
+    "id": "wiVXhN73Mt",
+    "created": "Sat Sep 17 2022 19:31:42 GMT+0200"
+  },
+  {
+    "applicantType": "LEGAL_ENTITY",
+    "name": "Herbert",
+    "surname": "Berber",
+    "birthNum": "006003/2400",
+    "nationality": "CZ",
+    "email": "herbert.brebrebre@berber.ber",
+    "phone": "+420111222345",
+    "IC": "123466434",
+    "companyName": "Trees and Such",
+    "amount": 1000000,
+    "numOfMonths": 12,
+    "position": "generální ředitel",
     "address": {
       "street": "Ante",
       "descNumber": 13,

@@ -73,6 +73,13 @@ async function CreateAbl(req, res) {
             return
         }
 
+        if (input.descNumber%2 === 0) {
+            res.status(400).send({
+                errorMessage: `error - even descriptive number`
+            })
+            return
+        }
+
         const applicantType = input.applicantType
 
         const schema = function(){

@@ -14,13 +14,19 @@ async function CalculateAbl(req, res) {
     const ajv = new Ajv({useDefaults: 'empty'});
     const values = req.body;
     const valid = ajv.validate(schema, values);
+
+    const {amount, numOfMonths} = values
+    const interest = 9
+    const RPSN = 11
+    const overall = amount * 1.11
+    const monthly = Math.floor(overall / numOfMonths)
     if (valid) {
         const result = {
-          //TODO
-          monthlyPayment: 12,
-          yearlyInterest: 12,
-          RPSN: 12,
-          overallAmount: 12
+          monthlyPayment: monthly,
+          yearlyInterest: interest,
+          RPSN: RPSN,
+          overallAmount: overall,
+          fixedFee: values.amount > 200000 ? 2000 : 0
         }
       res.status(200).send(result)
     } else {

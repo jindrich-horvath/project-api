@@ -17,3 +17,6 @@ in the terminal at **server** folder of the project:
 * PUT /request/:id/cancel
 * PUT /request/:id/approve
 * DELETE /request/:id
+
+### You can find logins and passwords of mock users in
+* ./storage/users.json
