@@ -18,8 +18,8 @@ async function CalculateAbl(req, res) {
     const {amount, numOfMonths} = values
     const interest = 9
     const RPSN = 11
-    const overall = amount * 1.11
-    const monthly = Math.floor(overall / numOfMonths)
+    const overall = Math.ceil(amount * 1.11)
+    const monthly = Math.ceil(overall / numOfMonths)
     if (valid) {
         const result = {
           monthlyPayment: monthly,

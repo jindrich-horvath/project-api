@@ -17,7 +17,7 @@ const baseSchema = {
         email: {type: "string", notEmpty: true},
         phone: {type: "string"},
         IC: {type: "string"},
-        function: {type: "string"},
+        position: {type: "string"},
         companyName: {type: "string"},
         amount: {type: "number"},
         numOfMonths: {type: "number"},
@@ -56,9 +56,9 @@ const legalSchema = {
     properties: {
         ...baseSchema.properties,
         IC: {type: "string", notEmpty: true},
-        function: {type: "string", notEmpty: true},
+        position: {type: "string", notEmpty: true},
     },
-    required: [...baseSchema.required, "IC", "function"]
+    required: [...baseSchema.required, "IC", "position"]
 }
 
 async function CreateAbl(req, res) {
