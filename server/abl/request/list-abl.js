@@ -25,7 +25,10 @@ async function ListAbl(req, res) {
             numOfMonths: el.numOfMonths,
             position: el.position,
             status: el.status,
-            created: el.created
+            created: el.created,
+            name: el.name,
+            surname: el.surname,
+            companyName: el.companyName
         }))
 
         res.json(result);
